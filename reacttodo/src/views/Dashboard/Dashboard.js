@@ -29,7 +29,7 @@ export default function Dashboard() {
                 console.log(err);
             }) 
         } catch (error) {
-            
+            console.log(error)
         }
         
     }
@@ -47,8 +47,7 @@ export default function Dashboard() {
                 <Divider orientation="vertical" />
             </Grid>
             <Grid item lg={7}>
-            
-            <Bucket list={bucket} val={childCallback}/>
+            {bucket.length === 0? <h3>No Bucket Found</h3>:<Bucket list={bucket} val={childCallback}/>}
             </Grid>    
         </Grid>
     );

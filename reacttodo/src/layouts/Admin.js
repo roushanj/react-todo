@@ -3,6 +3,7 @@ import {  Route } from "react-router-dom";
 import "perfect-scrollbar/css/perfect-scrollbar.css";
 import routes from "routes.js";
 import { AppBar, Toolbar } from "@material-ui/core";
+import Logo from '../Logo.png';
 
 export default function Dashboard(props) {
  
@@ -30,7 +31,9 @@ export default function Dashboard(props) {
   return (
     <div >
       <AppBar style={{background:"#148f74"}} >
-        <Toolbar  />  
+        <Toolbar>  
+        <img src={Logo} style={{marginLeft:"47%", padding:"2px"}} alt="logo" width="4%" height="4%" />
+        </Toolbar>
       </AppBar>
       <div >{getRoutes(routes)}</div>
     </div>  

@@ -1,7 +1,7 @@
 import React from 'react';
 import AuthenticatedRoute from "auth/AuthenticatedRoute";
 import AdminLayout from "layouts/Admin.js";
-import { Switch } from "react-router-dom";
+import { Switch, Redirect } from "react-router-dom";
 
 
 export default function App() {
@@ -17,7 +17,7 @@ export default function App() {
             path="/admin"
             component={AdminLayout}
           />
-        
+         <Redirect from="/" to={'/admin/dashboard'} />
         
         </Switch>
       </div>
