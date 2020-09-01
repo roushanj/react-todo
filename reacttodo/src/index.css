@@ -100,10 +100,17 @@ body {
 
 .todo-card-1 {
   background:linear-gradient(135deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+  
+}
+.todo-card-1:hover {
+  background:linear-gradient(135deg, rgba(0,0,0,0.22), rgba(255,255,255,25));
+  cursor: pointer;
+  
 }
 .todo-card-2 {
   background: linear-gradient(-45deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25))
 }
+
 
 .login-div {
   width:430px;
